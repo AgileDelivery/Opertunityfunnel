@@ -1,7 +1,7 @@
 name: Minimum Business Requirement
 description: Create a New MBI
 title: "[MBI]: "
-labels: []
+labels: [MBI,need triaging]
 body:
   - type: markdown
     attributes:
