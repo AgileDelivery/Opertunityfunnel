@@ -12,15 +12,14 @@ body:
         
         Thank you for taking the time in creating a new MBI.
   - type: dropdown
-    id: os
+    id: initId
     attributes:
       label: Parent Initiative ID
       description: "MBI need to be part of Initiative? Please provide the the parent ID."
       options:
-        - #10052 Global Marine Order Proecessing Automation 
-        - #10054 Ethena Performance Enahancement
-        - #10058 Food Servicing Industry Automation (Exploration) 
-        - Somewhere else (please specify in the description!)
+        - 10052 Global Marine Order Proecessing Automation 
+        - 10054 Ethena Performance Enahancement
+        - 10058 Food Servicing Industry Automation (Exploration) 
     validations:
       required: true  
   - type: dropdown
