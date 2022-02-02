@@ -14,52 +14,35 @@ body:
   - type: input
     id: os
     attributes:
-      label: Operating system
-      description: "Which operating system do you use? Please provide the version as well."
-      placeholder: "macOS Big Sur 11.5.2"
+      label: Parent Initiative ID
+      description: "MBI need to be part of Initiative? Please provide the the parent ID."
+      placeholder: "Global marine Supply Chain 11.5.2"
     validations:
       required: true  
-  - type: input
-    id: laravel
-    attributes:
-      label: Laravel Version
-      description: "Please provide the full Laravel version of your project."
-      placeholder: "v8.6.1"
-    validations:
-      required: true
-  - type: input
-    id: php
-    attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
-    validations:
-      required: true
   - type: dropdown
     id: location
     attributes:
-      label: Project Location
+      label: Targeted Region
       description: Where is the project located?
       options:
-        - Local
-        - Remote (Server)
-        - Remote (Docker)
+        - Global
+        - USA
+        - EU
         - Somewhere else (please specify in the description!)
     validations:
       required: true
   - type: textarea
-    id: bug-description
+    id: mbi-description
     attributes:
-      label: Bug description
+      label: MBI description
       description: What happened and what did you expect to happen?
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: valprop
     attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
- 
+      label: Value Proposition
+      description: What are the Anticipated benefit of this MBI ?
   - type: textarea
     id: logs
     attributes:
