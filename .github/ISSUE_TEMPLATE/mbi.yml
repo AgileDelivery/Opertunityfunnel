@@ -11,12 +11,16 @@ body:
         ---
         
         Thank you for taking the time in creating a new MBI.
-  - type: input
+  - type: dropdown
     id: os
     attributes:
       label: Parent Initiative ID
       description: "MBI need to be part of Initiative? Please provide the the parent ID."
-      placeholder: "Global marine Supply Chain 11.5.2"
+      options:
+        - #10052 Global Marine Order Proecessing Automation 
+        - #10054 Ethena Performance Enahancement
+        - #10058 Food Servicing Industry Automation (Exploration) 
+        - Somewhere else (please specify in the description!)
     validations:
       required: true  
   - type: dropdown
@@ -43,9 +47,3 @@ body:
     attributes:
       label: Value Proposition
       description: What are the Anticipated benefit of this MBI ?
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
